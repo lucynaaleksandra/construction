@@ -1,26 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "./layout/index.scss";
+@import "./util/variables";
+@import "./util/mediaq";
+@import "./util/animations";
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background: rgb(0, 187, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(114, 233, 255, 1) 0%,
-    rgba(0, 187, 255, 1) 90%
-  );
+}
 
-  /* REMOVE ME */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-weight: 300;
+  // font-family: "Noto Sans", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 h1 {
@@ -46,7 +42,24 @@ h6 {
   padding: 0;
 }
 
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
-  color: #333;
+  color: $color-text-primary;
+  cursor: pointer;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  color: $color-white;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid $color-white;
 }
