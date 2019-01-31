@@ -10,6 +10,7 @@ nav {
 
   @include responsive-xs {
     flex-wrap: wrap;
+    padding: 20px 50px;
   }
 
   .la-nav__logo {
@@ -42,10 +43,6 @@ nav {
       padding: 20px;
       cursor: pointer;
       @include hover-scale-01;
-
-      @include responsive-xs {
-        // flex-direction: column;
-      }
     }
   }
 

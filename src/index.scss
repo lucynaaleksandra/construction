@@ -74,3 +74,16 @@ button {
   border: 1px solid $color-text-primary;
   color: $color-text-primary;
 }
+
+.la-banner__btn {
+  display: flex;
+  align-items: center;
+
+  h6 {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

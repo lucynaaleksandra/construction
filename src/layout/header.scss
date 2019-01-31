@@ -1,7 +1,7 @@
 @import "../util/variables";
 
 .la-header {
-  height: 100vh;
+  // height: 100vh;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.5),
       rgba(12, 12, 12, 0.5)
@@ -13,8 +13,8 @@
   background-repeat: no-repeat;
   color: $color-white;
 
-  // @include responsive-xs {
-  // }
+  @include responsive-xs {
+  }
 
   p {
     padding: 200px 100px 50px 100px;
@@ -23,19 +23,29 @@
     @include responsive-sm {
       width: 60%;
     }
-
     @include responsive-xs {
       width: 70%;
+      padding: 200px 50px 50px 50px;
+      font-size: 13px;
     }
   }
 
   h1 {
     padding: 0 100px;
+
+    @include responsive-xs {
+      padding: 0 50px;
+      font-size: 65px;
+    }
   }
 
   > div {
     padding: 50px 100px 100px 100px;
     display: flex;
+
+    @include responsive-xs {
+      padding: 50px;
+    }
 
     h6 {
       display: flex;
