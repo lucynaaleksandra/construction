@@ -15,6 +15,7 @@ nav {
 
   .la-nav__logo {
     display: flex;
+    align-items: center;
     font-size: 20px;
 
     .la-nav__logo-img {
@@ -48,11 +49,8 @@ nav {
 
   .la-nav__menu {
     display: flex;
+    justify-content: center;
     align-items: center;
     @include hover-scale-01;
-
-    a {
-      color: $color-white;
-    }
   }
 }

@@ -1,7 +1,7 @@
 @import "../util/variables";
 
 .la-header {
-  // height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.5),
       rgba(12, 12, 12, 0.5)
@@ -14,6 +14,7 @@
   color: $color-white;
 
   @include responsive-xs {
+    height: 100%;
   }
 
   p {
@@ -53,6 +54,11 @@
       font-size: 14px;
       font-weight: 300;
       margin-right: 20px;
+    }
+
+    h6,
+    button {
+      @include hover-scale-01;
     }
   }
 }

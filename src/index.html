@@ -18,7 +18,7 @@
 
   <body>
     <main>
-      <section class="la-header">
+      <section class="la-header closeNav()">
         <nav>
           <div class="la-nav__logo"><img class="la-nav__logo-img" /></div>
 
@@ -28,11 +28,18 @@
             <div class="la-nav__tab">Contact Us</div>
           </div>
 
-          <div class="la-nav__menu">
-            <a> MENU <span>&#9776;</span> </a>
-            <!-- <div><a>Portals</a> <a>News</a> <a>Careers</a> <a>Contact Us</a></div> -->
+          <div onclick="openNav()" class="la-nav__menu">
+            <span>&#9776;</span> MENU
           </div>
         </nav>
+
+        <!-- SIDEBAR -->
+        <div class="la-nav__menu-tabs">
+          <a onclick="closeNav()" class="la-nav__closebtn"> &times; </a>
+          <a>Home</a> <a>Portals</a> <a>News</a> <a>Careers</a>
+          <a>Contact Us</a>
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -44,7 +51,6 @@
           <h6>Find out more</h6>
           <button class="la-button__white">></button>
         </div>
-        <!-- <i class="material-icons"> arrow_forward </i> -->
       </section>
 
       <section class="la-190">
@@ -86,7 +92,7 @@
 
         <div class="la-about__content">
           <div class="la-about__content-1">
-            <div>
+            <div class="la-banner__btn">
               <h2>Pre-Construction</h2>
               <button class="la-button__dark">></button>
             </div>
@@ -97,7 +103,7 @@
           </div>
 
           <div class="la-about__content-2">
-            <div>
+            <div class="la-banner__btn">
               <h2>On-Site Logistics</h2>
               <button class="la-button__dark">></button>
             </div>
@@ -108,7 +114,7 @@
           </div>
 
           <div class="la-about__content-3">
-            <div>
+            <div class="la-banner__btn">
               <h2>Software Products</h2>
               <button class="la-button__dark">></button>
             </div>

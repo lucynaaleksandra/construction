@@ -40,11 +40,11 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
   opacity: 0.9;
   transform: scale(1);
-  transition: $easeOutBack 250ms;
+  transition: $easeOutQuart 250ms;
 
   &:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 }
 

@@ -30,7 +30,6 @@
   .la-about__content {
     margin-top: 50px;
     display: flex;
-    justify-content: center;
 
     @include responsive-sm {
       flex-direction: column;
@@ -46,13 +45,9 @@
     .la-about__content-1,
     .la-about__content-2,
     .la-about__content-3 {
-      flex-direction: column;
+      // flex-direction: column;
       flex: 1 0 auto;
       padding-left: 30px;
-
-      > div {
-        display: flex;
-      }
 
       h2 {
         padding-right: 15px;

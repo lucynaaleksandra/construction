@@ -51,6 +51,7 @@ p {
 a {
   text-decoration: none;
   color: $color-text-primary;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -62,6 +63,7 @@ button {
   border-radius: 50%;
   background: transparent;
   outline: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -78,6 +80,7 @@ button {
 .la-banner__btn {
   display: flex;
   align-items: center;
+  @include hover-scale-01;
 
   h6 {
     margin-right: 20px;

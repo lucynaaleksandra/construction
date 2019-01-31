@@ -26,3 +26,22 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   }
 })
+
+// MENU
+window.openNav = () => {
+  document.querySelector(".la-nav__menu").classList.add("la-nav__menu--visible")
+}
+
+window.closeNav = () => {
+  document
+    .querySelector(".la-nav__menu")
+    .classList.remove("la-nav__menu--visible")
+}
+
+// // STICKY NAV
+// $(document).ready(function() {
+//   $("#la-nav__navbar").sticky({
+//     topSpacing: 0,
+//     zIndex: 15,
+//   })
+// })
