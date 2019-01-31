@@ -1,0 +1,35 @@
+.la-review {
+  height: 100vh;
+  background: palegoldenrod;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+
+  h6 {
+    height: 50%;
+    background: pink;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: salmon;
+
+    @include responsive-xs {
+      margin-top: 30px;
+    }
+
+    // p {
+    //   background: purple;
+    // }
+
+    > div {
+      display: flex;
+
+      @include responsive-xs {
+        align-items: center;
+      }
+    }
+  }
+}

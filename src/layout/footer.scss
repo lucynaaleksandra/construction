@@ -1,0 +1,49 @@
+footer {
+  padding: $padding;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(61, 61, 61);
+  color: $color-white;
+
+  @include responsive-xs {
+    padding: 50px;
+  }
+
+  .la-footer__logo {
+    width: 70px;
+    height: 70px;
+    border: 1px solid $color-white;
+    background-image: url("/asset/logo_wA.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .la-footer__menu {
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+      padding-bottom: 16px;
+      font-size: 15px;
+    }
+
+    a {
+      font-size: 12px;
+      color: $color-white;
+      @include hover-scale-01;
+    }
+
+    &:nth-child(5) {
+      width: 10%;
+
+      i {
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 10px;
+        font-size: 18px;
+        @include hover-scale-01;
+      }
+    }
+  }
+}

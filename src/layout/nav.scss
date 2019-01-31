@@ -1,0 +1,61 @@
+@import "./util/variables";
+@import "./util/mediaq";
+@import "./util/animations";
+
+nav {
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  @include responsive-xs {
+    flex-wrap: wrap;
+  }
+
+  .la-nav__logo {
+    display: flex;
+    font-size: 20px;
+
+    .la-nav__logo-img {
+      width: 60px;
+      height: 60px;
+      background-image: url("/asset/logo_wA.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .la-nav__tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include responsive-xs {
+      order: 1;
+      flex-basis: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .la-nav__tab {
+      padding: 20px;
+      cursor: pointer;
+      @include hover-scale-01;
+
+      @include responsive-xs {
+        // flex-direction: column;
+      }
+    }
+  }
+
+  .la-nav__menu {
+    display: flex;
+    align-items: center;
+    @include hover-scale-01;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
