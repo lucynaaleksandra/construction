@@ -63,14 +63,14 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 /* ----- KEYFRAMES ----- */
 
-@include keyframes(fade) {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @include keyframes(fade) {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 @keyframes enter-scale-x {
   from {
@@ -81,17 +81,6 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-@keyframes fade-down {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes to-origin-y {
   to {
     opacity: 1;
@@ -99,60 +88,71 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+// @keyframes fade-down {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-40px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
-@keyframes up {
-  0% {
-    opacity: 0;
-    transform: translateY(10%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+// @keyframes fade-up {
+//   from {
+//     opacity: 0;
+//     transform: translateY(40px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
-@keyframes left-to-right {
-  0% {
-    opacity: 0;
-    transform: translateX(-20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+// @keyframes up {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(10%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
-@keyframes right-to-left {
-  0% {
-    opacity: 0;
-    transform: translateX(8%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+// @keyframes left-to-right {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(-20%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
 
-@keyframes slidein {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
+// @keyframes right-to-left {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(8%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
 
-@include create-fade-up-keyframes("enter-fade-up-1", 0.8);
+// @keyframes slidein {
+//   0% {
+//     transform: scaleX(0);
+//   }
+//   100% {
+//     transform: scaleX(1);
+//   }
+// }
+
+// @include create-fade-up-keyframes("enter-fade-up-1", 0.8);
 
 // @keyframes slant-background {
 //   0% {

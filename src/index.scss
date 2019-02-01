@@ -20,6 +20,10 @@ body {
   color: $color-text-primary;
 }
 
+main {
+  overflow: hidden;
+}
+
 h1 {
   font-size: 80px;
   font-weight: 300;
