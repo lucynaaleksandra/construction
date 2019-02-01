@@ -13,6 +13,7 @@
   .la-190__text {
     display: flex;
     margin-top: 50px;
+    @include will-animate-y;
 
     @include responsive-sm {
       flex-direction: column;
@@ -93,6 +94,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include will-animate-y;
 
     @include responsive-xs {
       background-size: auto;

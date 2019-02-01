@@ -20,6 +20,8 @@
   p {
     padding: 200px 100px 50px 100px;
     width: 40%;
+    opacity: 0;
+    animation: fade-up 3000ms $easeOutBack 1000ms forwards;
 
     @include responsive-sm {
       width: 60%;
@@ -33,6 +35,8 @@
 
   h1 {
     padding: 0 100px;
+    opacity: 0;
+    animation: fade-up 3000ms $easeOutBack 1400ms forwards;
 
     @include responsive-xs {
       padding: 0 50px;
@@ -43,6 +47,8 @@
   > div {
     padding: 50px 0 0 100px;
     display: flex;
+    // opacity: 0;
+    // animation: fade-up 3000ms $easeOutBack 1800ms forwards;
 
     @include responsive-xs {
       padding: 50px;

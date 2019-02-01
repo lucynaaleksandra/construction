@@ -13,6 +13,7 @@
   h1 {
     font-size: 55px;
     margin: 15px 0;
+    @include will-animate-y;
 
     @include responsive-sm {
       font-size: 40px;
@@ -56,6 +57,8 @@
     }
 
     .la-about__content-1 {
+      // @include will-animate-y;
+
       > div {
         padding-right: 20px;
 
@@ -67,6 +70,12 @@
         }
       }
     }
+    // .la-about__content-2 {
+    //   @include will-animate-y;
+    // }
+    // .la-about__content-3 {
+    //   @include will-animate-y;
+    // }
 
     @include responsive-sm {
       .la-about__content-1,

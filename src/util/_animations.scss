@@ -7,7 +7,6 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @mixin animto($name, $duration, $ease, $end, $delay: 0ms) {
   @content;
-
   animation: $name $duration $ease $end;
 }
 
@@ -99,16 +98,16 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 //   }
 // }
 
-// @keyframes fade-up {
-//   from {
-//     opacity: 0;
-//     transform: translateY(40px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 // @keyframes up {
 //   0% {
@@ -121,27 +120,27 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 //   }
 // }
 
-// @keyframes left-to-right {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-20%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// @keyframes right-to-left {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(8%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 // @keyframes slidein {
 //   0% {
@@ -152,7 +151,7 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 //   }
 // }
 
-// @include create-fade-up-keyframes("enter-fade-up-1", 0.8);
+@include create-fade-up-keyframes("enter-fade-up-1", 0.8);
 
 // @keyframes slant-background {
 //   0% {

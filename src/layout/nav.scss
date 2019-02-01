@@ -24,12 +24,16 @@ nav {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation: left-to-right 3000ms $easeOutBack 500ms normal forwards;
   }
 
   .la-nav__tabs {
     display: flex;
     flex-direction: row;
     align-items: center;
+    opacity: 0;
+    animation: fade-up 3000ms $easeOutBack 500ms forwards;
 
     @include responsive-xs {
       order: 1;
@@ -50,5 +54,7 @@ nav {
     justify-content: center;
     align-items: center;
     @include hover-scale-01;
+    opacity: 0;
+    animation: right-to-left 3000ms $easeOutBack 500ms normal forwards;
   }
 }
