@@ -29,12 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // MENU
 window.openNav = () => {
-  document.querySelector(".la-nav__menu").classList.add("la-nav__menu--visible")
+  document
+    .querySelector(".la-nav__menu-tabs")
+    .classList.add("la-nav__menu--visible")
 }
 
 window.closeNav = () => {
   document
-    .querySelector(".la-nav__menu")
+    .querySelector(".la-nav__menu-tabs")
     .classList.remove("la-nav__menu--visible")
 }
 

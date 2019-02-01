@@ -12,6 +12,7 @@
 
   .la-190__text {
     display: flex;
+    margin-top: 50px;
 
     @include responsive-sm {
       flex-direction: column;
@@ -86,19 +87,15 @@
   .la-190__img {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     height: 50vh;
+    background-image: url("/asset/img-17A.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
-    img {
-      width: 100%;
-      height: 100%;
-      background-image: url("/asset/img-17A.jpg");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-
-      @include responsive-xs {
-        background-size: auto;
-      }
+    @include responsive-xs {
+      background-size: auto;
     }
   }
 }
