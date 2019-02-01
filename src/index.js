@@ -30,10 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
 // MENU
 window.openNav = () => {
   document.querySelector(".la-menu").classList.add("la-nav__menu--visible")
+  document.body.style.overflow = "hidden"
 }
 
 window.closeNav = () => {
   document.querySelector(".la-menu").classList.remove("la-nav__menu--visible")
+  document.body.style.overflow = "visible"
 }
 
 // // STICKY NAV
