@@ -13,7 +13,8 @@
   h1 {
     font-size: 55px;
     margin: 15px 0;
-    @include will-animate-y;
+    opacity: 0;
+    animation: fade-down 3000ms $easeOutBack 500ms forwards;
 
     @include responsive-sm {
       font-size: 40px;
@@ -57,7 +58,8 @@
     }
 
     .la-about__content-1 {
-      // @include will-animate-y;
+      opacity: 0;
+      animation: left-to-right 3000ms $easeOutBack 500ms forwards;
 
       > div {
         padding-right: 20px;
@@ -70,12 +72,16 @@
         }
       }
     }
-    // .la-about__content-2 {
-    //   @include will-animate-y;
-    // }
-    // .la-about__content-3 {
-    //   @include will-animate-y;
-    // }
+
+    .la-about__content-2 {
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 500ms forwards;
+    }
+
+    .la-about__content-3 {
+      opacity: 0;
+      animation: right-to-left 3000ms $easeOutBack 500ms forwards;
+    }
 
     @include responsive-sm {
       .la-about__content-1,

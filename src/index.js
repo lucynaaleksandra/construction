@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // MENU
 window.openNav = () => {
   document.querySelector(".la-menu").classList.add("la-nav__menu--visible")
-  document.body.style.overflow = "hidden"
+  //document.body.style.overflow = "hidden"
 }
 
 window.closeNav = () => {

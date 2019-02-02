@@ -1,7 +1,9 @@
 /* ----- EASING FUNC ----- */
+
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 $easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
 $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
 
 /* ----- MIXINS ----- */
 
@@ -62,20 +64,22 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 /* ----- KEYFRAMES ----- */
 
-// @include keyframes(fade) {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@include keyframes(fade) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes enter-scale-x {
   from {
+    opacity: 0;
     transform: scaleX(0);
   }
   to {
+    opacity: 1;
     transform: scaleX(1);
   }
 }
@@ -87,16 +91,16 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-// @keyframes fade-down {
-//   from {
-//     opacity: 0;
-//     transform: translateY(-40px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fade-up {
   from {
@@ -109,16 +113,16 @@ $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-// @keyframes up {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(10%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+}
 
 @keyframes left-to-right {
   0% {
