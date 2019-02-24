@@ -30,8 +30,8 @@
   }
 
   .la-about__content {
-    margin-top: 50px;
     display: flex;
+    margin-top: 50px;
     margin-bottom: 50px;
 
     @include responsive-sm {
