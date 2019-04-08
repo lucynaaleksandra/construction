@@ -1,9 +1,12 @@
 .la-about {
   padding: $padding;
-  margin: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include responsive-xs {
+    padding: 50px;
+  }
 
   h6 {
     font-size: 18px;

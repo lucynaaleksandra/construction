@@ -34,7 +34,7 @@
     width: 80px;
     height: 80px;
     // border: 1px solid #373737;
-    border: 1px solid $color-white;
+    // border: 1px solid $color-white;
     background-image: url("asset/logo_wA.png");
     background-size: contain;
     background-position: center;
@@ -44,14 +44,14 @@
   .la-nav__closebtn {
     color: $color-white;
     position: absolute;
-    top: 45px;
+    top: 35px;
     right: 10%;
-    font-size: 30px;
-    cursor: pointer;
+    font-size: 35px;
+    // cursor: pointer;
     @include hover-scale-01;
 
     > span {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 300;
       padding-right: 10px;
     }
